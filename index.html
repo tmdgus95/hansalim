@@ -89,7 +89,7 @@
         <!-- CSS3 적용 -->
         <script src="js/prefixfree.min.js"></script>
         <!-- css 초기화 -->
-        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
         <!-- fontawsome -->
         <link
             rel="stylesheet"
@@ -98,19 +98,54 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="css/test.css" />
+        <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
+        <!-- 고정 메뉴 -->
+        <div class="fix-menu">
+            <ul class="fix-list">
+                <li>
+                    <a href="#" class="fix-login">
+                        <span>로그인</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="fix-shop">
+                        <span>주문/공급</span>
+                    </a>
+                </li>
+                <li>
+                    <span>최근 본 물품</span>
+                    <a href="#" class="good-recent">
+                        <img src="images/best_1.jpg" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="fix-qa">
+                        <span>상담/문의</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="fix-talk">
+                        <span>살림톡</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="fix-top">top</button>
+        </div>
         <!-- 기본레이아웃 -->
         <div class="wrap">
-            <!--  상단-->
+            <!-- 상단 -->
             <header class="header">
                 <div class="container">
                     <div class="header-top clearfix">
                         <div class="header-top-left">
                             <a href="index.html" class="logo">
-                                <img src="images/logo.png" alt="한살림정보"
-                            /></a>
+                                <img
+                                    src="images/logo.png"
+                                    alt="한살림 장보기"
+                                />
+                            </a>
                             <button class="bt-schedule">
                                 <img
                                     src="images/icoLocation.png"
@@ -123,11 +158,8 @@
                             <a href="#" class="track">
                                 <img src="images/icoDlvr.png" alt="배송조회" />
                             </a>
-
                             <ul class="member-list clearfix">
-                                <li>
-                                    <a href="#" class="login">로그인</a>
-                                </li>
+                                <li><a href="#">로그인</a></li>
                                 <li><a href="#">나의한살림</a></li>
                                 <li>
                                     <a href="#" class="center-more"
@@ -151,7 +183,7 @@
                     </div>
 
                     <div class="header-main clearfix">
-                        <!-- 헤더메인왼쪽 -->
+                        <!-- 헤더 메인 왼쪽 -->
                         <div class="header-main-left">
                             <nav class="nav">
                                 <ul class="gnb clearfix">
@@ -169,7 +201,7 @@
                                     <li><a href="#" class="ball">채식</a></li>
                                     <li>
                                         <button class="join-bt">
-                                            참여 <i class="join-bt-icon"></i>
+                                            참여<i class="join-bt-icon"></i>
                                         </button>
                                         <ul class="join-list">
                                             <li>
@@ -193,8 +225,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- //헤더메인왼쪽 -->
-                        <!--헤더메인 오른쪽  -->
+                        <!--// 헤더 메인 왼쪽 -->
+                        <!-- 헤더 메인 오른쪽 -->
                         <div class="header-main-right clearfix">
                             <form action="" method="get" class="search-form">
                                 <input
@@ -204,16 +236,15 @@
                                 />
                                 <input type="submit" class="search-bt" />
                             </form>
-
                             <a href="#" class="bucket">
                                 <span class="bucket-count">0</span>
                             </a>
                         </div>
-                        <!--//헤더 메인 오른쪽  -->
+                        <!--// 헤더 메인 오른쪽 -->
                     </div>
                 </div>
             </header>
-            <!--비주얼  -->
+            <!-- 비주얼 -->
             <section class="visual">
                 <div class="visual-slide">
                     <div class="visual-slide-page">
@@ -232,7 +263,6 @@
                     <button class="visual-more"></button>
                 </div>
             </section>
-
             <!-- 오늘의 상품 -->
             <section class="today">
                 <div class="container">
@@ -385,11 +415,11 @@
                     <div class="layout-wrap clearfix">
                         <div class="layout-left">
                             <h2 class="section-title section-bar">
-                                놓치기 아쉬운<br />
+                                놓치기 아쉬운 <br />
                                 <b>알뜰물품</b>
                             </h2>
                             <p class="section-title-txt">
-                                가격인하 물품을<br />
+                                가격인하 물품을 <br />
                                 지금 바로 이용해 보세요
                             </p>
                             <a href="#" class="section-bt">더보기</a>
@@ -402,7 +432,7 @@
                         <div class="layout-right">
                             <!-- 알뜰상품 슬라이드 -->
                             <div class="good-slide clearfix">
-                                <div class="good-box clearfix">
+                                <div class="good-box">
                                     <!-- 제품이미지 -->
                                     <a href="#" class="good-img">
                                         <img src="images/good.jpg" alt="제품" />
@@ -454,6 +484,7 @@
                                     <button class="good-add-cart"></button>
                                 </div>
                             </div>
+                            <!--// 알뜰상품 슬라이드  -->
                         </div>
                     </div>
                 </div>
@@ -522,15 +553,14 @@
                     <!--// 새물품 내용 -->
                 </div>
             </section>
-            <!--추천 물품  -->
+            <!-- 추천물품 -->
             <section class="recommend">
                 <div class="container">
                     <div class="layout-wrap clearfix">
                         <div class="layout-left">
                             <h2 class="section-title section-bar">
-                                <b class="blue">조합원</b>님을 위한<br /><b
-                                    >추천물품</b
-                                >
+                                <b class="blue">조합원</b>님을 위한 <br />
+                                <b>추천물품</b>
                             </h2>
                             <p class="section-title-txt">
                                 찬바람 불 때 뜨끈한 국수 한 그릇
@@ -542,8 +572,9 @@
                             </div>
                         </div>
                         <div class="layout-right">
+                            <!-- 추천상품 슬라이드 -->
                             <div class="good-slide clearfix">
-                                <div class="good-box clearfix">
+                                <div class="good-box">
                                     <!-- 제품이미지 -->
                                     <a href="#" class="good-img">
                                         <img src="images/good.jpg" alt="제품" />
@@ -595,6 +626,7 @@
                                     <button class="good-add-cart"></button>
                                 </div>
                             </div>
+                            <!--// 추천상품 슬라이드  -->
                         </div>
                     </div>
                 </div>
@@ -701,7 +733,6 @@
                                     >식사대용/간편식</span
                                 >
                             </a>
-
                             <a href="#">
                                 <span
                                     class="popular-cate-icon cate-icon-12"
@@ -710,7 +741,6 @@
                                     >식사대용/간편식</span
                                 >
                             </a>
-
                             <a href="#">
                                 <span
                                     class="popular-cate-icon cate-icon-13"
@@ -719,7 +749,6 @@
                                     >식사대용/간편식</span
                                 >
                             </a>
-
                             <a href="#">
                                 <span
                                     class="popular-cate-icon cate-icon-14"
@@ -729,8 +758,9 @@
                                 >
                             </a>
                         </div>
-
-                        <div class="popular-slide-next"><span>다음</span></div>
+                        <div class="popular-slide-next">
+                            <span>다음</span>
+                        </div>
                     </div>
                     <!-- 인기물품 목록 -->
                     <div class="good-wrap clearfix no-mb">
@@ -806,7 +836,7 @@
                     <!--// 인기물품 목록 -->
                 </div>
             </section>
-            <!--  브랜드관-->
+            <!-- 브랜드관 -->
             <section class="brand">
                 <div class="container">
                     <div class="layout-wrap clearfix">
@@ -815,8 +845,9 @@
                                 한살림 가치를 담은 <br />
                                 <b>브랜드관</b>
                             </h2>
+
                             <p class="section-title-txt">
-                                생활 속 작은 실천!<br />
+                                생활 속 작은 실천! <br />
                                 뜻깊은 물품소비에 참여해보세요.
                             </p>
                             <a href="#" class="section-bt">더보기</a>
@@ -826,8 +857,6 @@
                                 <button class="slide-next">다음</button>
                             </div>
                         </div>
-
-                        <!-- 브랜드 슬라이드 -->
                         <div class="layout-right">
                             <!-- 브랜드 슬라이드 -->
                             <div class="brand-slide clearfix">
@@ -994,8 +1023,8 @@
                                     </a>
                                 </div>
                             </div>
+                            <!--// 브랜드 슬라이드 -->
                         </div>
-                        <!--// 브랜드 슬라이드 -->
                     </div>
                 </div>
             </section>
@@ -1031,7 +1060,6 @@
                             <a href="#">
                                 <img src="images/cook_main.jpg" alt="요리" />
                                 <div class="season-info">
-                                    <!-- 정보 -->
                                     <h3>요리방법</h3>
                                     <p>
                                         <span
@@ -1049,12 +1077,12 @@
                                         <div class="season-good clearfix">
                                             <input
                                                 type="checkbox"
-                                                id="ch2"
+                                                id="ch1"
                                                 class="season-good-check"
                                                 checked
                                             />
                                             <label
-                                                for="ch2"
+                                                for="ch1"
                                                 class="season-label"
                                             >
                                                 라벨
@@ -1199,10 +1227,10 @@
                                         라벨
                                     </label>
 
-                                    전체선택 <em>3</em>개
+                                    전체 선택 <em>3</em>개
                                 </div>
                                 <a href="#" class="buy-good">
-                                    총 <em>50,000</em>원 장바구니 담기
+                                    총 <em>50,000</em>원 바구니 담기
                                 </a>
                             </div>
                         </div>
@@ -1327,9 +1355,213 @@
                 </div>
             </section>
             <!-- 커뮤니티 -->
-            <section class="community"><div class="container"></div></section>
-            <!--  하단-->
-            <footer class="footer"><div class="container"></div></footer>
+            <section class="community">
+                <div class="container clearfix">
+                    <div class="community-notice community-line">
+                        <dl class="clearfix">
+                            <dt>
+                                <button
+                                    class="community-bt community-bt-active"
+                                >
+                                    공지사항
+                                </button>
+                            </dt>
+                            <dd class="community-visible-active">
+                                <ul class="notice-list">
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                                                장보기 서비스 일시중단
+                                                안내(2022년 11월 12일(토) 02시 ~
+                                                12일(토) 03시)</span
+                                            ><em>2022.11.15</em></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                                                장보기 서비스 일시중단
+                                                안내(2022년 11월 12일(토) 02시 ~
+                                                12일(토) 03시)</span
+                                            ><em>2022.11.15</em></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                                                장보기 서비스 일시중단
+                                                안내(2022년 11월 12일(토) 02시 ~
+                                                12일(토) 03시)</span
+                                            ><em>2022.11.15</em></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                                                장보기 서비스 일시중단
+                                                안내(2022년 11월 12일(토) 02시 ~
+                                                12일(토) 03시)</span
+                                            ><em>2022.11.15</em></a
+                                        >
+                                    </li>
+                                </ul>
+                            </dd>
+
+                            <dt>
+                                <button class="community-bt">물품소식</button>
+                            </dt>
+
+                            <dd>
+                                <ul class="notice-list">
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                                                장보기 서비스 일시중단
+                                                안내(2022년 11월 12일(토) 02시 ~
+                                                12일(토) 03시)</span
+                                            ><em>2022.11.15</em></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                                                장보기 서비스 일시중단
+                                                안내(2022년 11월 12일(토) 02시 ~
+                                                12일(토) 03시)</span
+                                            ><em>2022.11.15</em></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                                                장보기 서비스 일시중단
+                                                안내(2022년 11월 12일(토) 02시 ~
+                                                12일(토) 03시)</span
+                                            ><em>2022.11.15</em></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                                                장보기 서비스 일시중단
+                                                안내(2022년 11월 12일(토) 02시 ~
+                                                12일(토) 03시)</span
+                                            ><em>2022.11.15</em></a
+                                        >
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="community-info community-line">
+                        <h3>조합원상담실</h3>
+                        <a href="tel:1661-0800" class="tel">1661-0800</a>
+                        <ul class="community-info-list">
+                            <li>
+                                <span class="t1">평일</span>
+                                <b>오전 9시~오후 6시 (점심시간 12시~1시)</b>
+                            </li>
+                            <li><span class="t2">주말 및 공휴일 휴무</span></li>
+                            <li>
+                                <span class="t1">이메일</span>
+                                <a href="mailto:hansalim@hansalim.or.kr"
+                                    >hansalim@hansalim.or.kr</a
+                                >
+                            </li>
+                            <li>
+                                <span class="t3"
+                                    >* 매장 구입 물품은 해당 매장 문의</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="community-help">
+                        <h3>자주 묻는 질문</h3>
+                        <ul class="community-hlep-list clearfix">
+                            <li><a href="#">조합원정보</a></li>
+                            <li><a href="#">주문/결제</a></li>
+                            <li><a href="#">취소/반품/환불</a></li>
+                            <li><a href="#">공급</a></li>
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 하단 -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="container clearfix">
+                        <ul class="footer-menu clearfix">
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">한살림소개</a></li>
+                            <li><a href="#">소식지PDF</a></li>
+                            <li><a href="#">주간한살림</a></li>
+                            <li><a href="#">앱다운로드</a></li>
+                        </ul>
+                        <button class="footer-link">
+                            한살림 가족 <span class="blank"></span>
+                            지역한살림
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer-main">
+                    <div class="container clearfix">
+                        <div class="footer-copy">
+                            <ul class="copy-list">
+                                <li>
+                                    <span
+                                        >상호명 :
+                                        한살림소비자생활협동조합연합회</span
+                                    >
+                                    <span>대표자 : 조완석</span>
+                                    <span
+                                        >사업자등록번호 :
+                                        <a href="#">126-82-12328</a></span
+                                    >
+                                    <span
+                                        >통신판매업신고번호 :
+                                        <a href="#"
+                                            >2014-경기안성-093호</a
+                                        ></span
+                                    >
+                                </li>
+                                <li>
+                                    안성사무소 : 경기 안성시 대덕면 안성대로
+                                    1526(보동리 285-3) / 서울사무소 : 서울시
+                                    강남구 봉은사로81길 15(삼성동)
+                                </li>
+                                <li>
+                                    <span
+                                        >입점문의 :
+                                        <a href="#">입점문의하기</a></span
+                                    >
+                                    <span
+                                        >이메일 :
+                                        <a href="mailto:hansalim@hansalim.or.kr"
+                                            >hansalim@hansalim.or.kr</a
+                                        ></span
+                                    >
+                                </li>
+                            </ul>
+                            <span class="copy-txt"
+                                >이곳의 모든 저작권은 한살림에게 있습니다.</span
+                            >
+                        </div>
+                        <div class="footer-sns">
+                            <ul class="sns-list clearfix">
+                                <li><a href="#" class="is"></a></li>
+                                <li><a href="#" class="fb"></a></li>
+                                <li><a href="#" class="nb"></a></li>
+                                <li><a href="#" class="yt"></a></li>
+                                <li><a href="#" class="kk"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
